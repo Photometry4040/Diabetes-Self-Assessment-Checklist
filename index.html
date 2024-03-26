@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - checklist</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>당뇨병 위험도 체크리스트</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <h1>당뇨병 위험도 체크리스트</h1>
+    <form action="javascript:void(0);" onsubmit="calculateScore();">
+      <p>
+        <label for="age">나이대 확인:</label>
+        <select id="age" name="age">
+          <option value="0">35세 미만</option>
+          <option value="2">35~44세 미만</option>
+          <option value="3">44세 이상</option>
+        </select>
+      </p>
+      <p>
+        <label for="family_history">가족력이 있나요? :</label>
+        <input type="radio" id="family_history_no" name="family_history" value="0" checked>
+        <label for="family_history_no">아니오</label>
+        <input type="radio" id="family_history_yes" name="family_history" value="1">
+        <label for="family_history_yes">예</label>
+      </p>
+      <p>
+        <label for="blood_pressure">현재 혈압약을 복용하고 있거나, 혈압이 140/90mmHg 이상인가요?:</label>
+        <p><input type="radio" id="blood_pressure_no" name="blood_pressure" value="0" checked>
+        <label for="blood_pressure_no">아니오</label>
+        <input type="radio" id="blood_pressure_yes" name="blood_pressure" value="1">
+        <label for="blood_pressure_yes">예</label>
+      </p></p>
+      <p>
+        <label for="waist_circumference">허리둘레 체크 :</label>
+        <select id="waist_circumference" name="waist_circumference">
+          <option value="0">남성: 84cm 미만</option>
+          <option value="2">남성: 84~90cm 미만</option>
+          <option value="3">남성: 90cm 이상</option>
+          <option value="4">여성: 77cm 미만</option>
+          <option value="6">여성: 77~84cm 미만</option>
+          <option value="8">여성: 84cm 이상</option>
+        </select>
+      </p>
+      <p>
+        <label for="smoking">흡연을 하나요? :</label>
+        <input type="radio" id="smoking_no" name="smoking" value="0" checked>
+        <label for="smoking_no">아니오</label>
+        <input type="radio" id="smoking_yes" name="smoking" value="1">
+        <label for="smoking_yes">예</label>
+      </p>
+      <p>
+        <label for="alcohol">평균 음주량(술 종류관계없이) :</label>
+        <select id="alcohol" name="alcohol">
+          <option value="0">하루 1잔 미만</option>
+          <option value="1">하루 1~5잔 미만</option>
+          <option value="2">하루 5잔 이상</option>
+        </select>
+      </p>
+     <button type="submit" id="calculate-button">자가 진단 총점</button>
+      <p id="result"></p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
